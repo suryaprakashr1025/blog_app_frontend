@@ -1,0 +1,73 @@
+.blog {
+    padding: 15px 0px;
+    background-color: black;
+    font-weight: bold !important;
+    box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    color: rgb(10, 9, 9) !important;
+}
+
+.blognavcoll {
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.bloglist {
+    padding: 30px 50px !important;
+}
+
+
+
+.bloglist img {
+    border: none !important;
+    padding: 10px 0px !important;
+    width: 150px;
+    height: 150px;
+}
+
+.bloglist li {
+    font-weight: bold;
+}
+
+
+
+.bloglist .card {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    padding: 20px 20px;
+}
+
+
+.bloglist .card .card-body .card-title {
+    font-weight: bold;
+    color: black;
+}
+
+.bloglist .card .card-body .read {
+    border: 1px solid black;
+    font-weight: bold;
+    margin-top: 10px !important;
+}
+ .localname{
+    pointer-events: none !important;
+}
+@media screen and (min-width:300px) and (max-width:600px) {
+  .blognavcoll {
+        display: flex ;
+        justify-content: flex-start;
+   
+    }
+
+    .blognavcoll li a {
+        color: white;
+    }
+}

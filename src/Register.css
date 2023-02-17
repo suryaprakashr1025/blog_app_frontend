@@ -1,0 +1,184 @@
+.register {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.regpop {
+    position: absolute;
+    top: 200px;
+    z-index: 200;
+    display: flex !important;
+    justify-content: center !important;
+}
+
+
+.dialog2 {
+
+    padding: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .1),
+        -1px -1px 5px rgba(0, 0, 0, .1);
+    border-radius: 20px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #af47d8;
+    color: white;
+    font-weight: bold;
+
+}
+
+.dialog p {
+    align-items: center !important;
+}
+
+/* .dialog input {
+    width: 30%;
+
+} */
+
+input[class="form"]:disabled {
+    background-color: rgb(192, 196, 201) !important;
+}
+
+.dialogbtn {
+    background-color: transparent;
+    border: 1px solid white !important;
+    color: white !important;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.dialogbtn:hover {
+    background-color: transparent !important;
+    border: 1px solid rgb(22, 20, 20);
+    color: rgb(32, 29, 29);
+    font-weight: bold;
+}
+
+.dialogbtn:focus {
+    background-color: transparent !important;
+    border: 1px solid rgb(22, 20, 20);
+    color: rgb(32, 29, 29);
+    font-weight: bold;
+}
+
+
+.registerform {
+    padding: 20px 65px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://cdn.searchenginejournal.com/wp-content/uploads/2020/08/7-ways-a-blog-can-help-your-business-right-now-5f3c06b9eb24e-1280x720.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .1),
+        -1px -1px 5px rgba(0, 0, 0, .1);
+    border-radius: 30px;
+    color: white;
+
+}
+
+.regbtn {
+    border: 1px solid white !important;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+
+}
+
+.regbtn:hover {
+    background-color: transparent !important;
+    border: 1px solid white !important;
+
+}
+
+.regbtn:focus {
+    background-color: transparent !important;
+
+}
+
+.errortext {
+    color: red;
+    font-size: 12px !important;
+    font-weight: bold;
+}
+
+@media screen and (min-width:300px) and (max-width:600px) {
+
+    .regimage{
+        margin-top: 40px;
+        width:98%;
+        height: 250px;
+        /* border: 1px solid black; */
+        background-image:  url(https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/content/en/_mdb5/standard/freebies/blog/assets/featured.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+    }
+    /* .regimage1{
+        margin-top: 20px;
+        width:98%;
+        height: 250px;
+        background-image:  url(https://cdn2.wpbeginner.com/wp-content/uploads/2019/03/author-1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+    } */
+
+    .register {
+     
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .registerform {
+        margin-top: 20px;
+        padding: 25px 40px;
+        box-shadow: none;
+        border-radius: 0px;
+        color: white;
+      
+    }
+
+
+    .regbtn {
+        width: 100%;
+    
+    }
+
+    .regpop {
+        width: 90%;
+        font-size: 12px;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center;
+
+    }
+
+    .dialogbtn {
+        font-size: 12px;
+        padding: 5px 5px;
+    }
+
+    .dialog2 {
+
+        position: sticky !important;
+        top:70px !important;
+        z-index: 100;
+        width: 100%;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, .1),
+            -10px -10px 10px rgba(0, 0, 0, .1);
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://cdn.searchenginejournal.com/wp-content/uploads/2020/08/7-ways-a-blog-can-help-your-business-right-now-5f3c06b9eb24e-1280x720.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        font-size: 12px;
+        text-align: center;
+    
+    }
+}

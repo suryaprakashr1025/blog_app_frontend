@@ -1,0 +1,117 @@
+.dashboard {
+    /* background-image: linear-gradient(to left, #7f971f,#a0b64a);
+    color: rgb(255, 236, 236); */
+}
+
+.user {
+    padding: 15px 0px;
+    /* background-image: linear-gradient(to left, #0C97FA, #48b2f0); */
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://cdn.searchenginejournal.com/wp-content/uploads/2020/08/7-ways-a-blog-can-help-your-business-right-now-5f3c06b9eb24e-1280x720.png);
+
+    font-weight: bold !important;
+    box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0px;
+
+    color: rgb(243, 232, 232) !important;
+}
+
+
+
+.navcoll {
+    padding-left: 700px;
+}
+
+.close:hover {
+    background-color: black;
+    color: white;
+}
+
+.user li a {
+    color: rgb(250, 234, 234) !important;
+    font-weight: bold !important;
+}
+
+.user li a:hover {
+    color: rgb(92, 10, 185) !important;
+    font-weight: bold !important;
+}
+
+.user span {
+    font-weight: bold;
+}
+
+.dropdown-menu .dropdown-item {
+    color: black !important;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: rgb(129, 80, 221) !important;
+    color: white !important;
+}
+
+.welcome {
+    margin: 20px 10px;
+    /* width: 60%; */
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://cdn.searchenginejournal.com/wp-content/uploads/2020/08/7-ways-a-blog-can-help-your-business-right-now-5f3c06b9eb24e-1280x720.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px 100px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px;
+    height: 80vh;
+}
+
+
+
+@media screen and (min-width:300px) and (max-width:991px) {
+    .navcoll {
+        padding-left: 0px !important;
+    }
+
+    .welcome {
+        height: 50%;
+
+        padding: 60px 10px;
+        background-size: cover;
+        border-radius: 0px;
+        margin-top: 50px;
+    }
+
+    .welcome h4 {
+        font-size: 16px !important;
+    }
+
+    .welcome h6 {
+        font-size: 12px !important;
+    }
+
+}
+
+@media screen and (min-width:992px) and (max-width:1350px) {
+    .navcoll {
+        padding-left: 500px !important;
+    }
+}
+
+
+@media screen and (min-height:900px) {
+
+    .welcome {
+        height:100vh;
+
+        padding: 60px 10px;
+        background-size: cover;
+        border-radius: 0px;
+        margin-top: 10px;
+    }
+
+   
+
+}

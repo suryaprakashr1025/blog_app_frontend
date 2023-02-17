@@ -1,0 +1,104 @@
+.rdblog{
+    padding: 8px 0px;
+    /* background-image: linear-gradient(to left, #0C97FA, #48b2f0); */
+    background-color: black;
+    font-weight: bold !important;
+    box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    color: rgb(10, 9, 9) !important;
+}
+
+.readimg{
+    border: 1px solid black;
+    width: 70%;
+    height: 82vh;
+    display: inline !important;
+    justify-content: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+.givereview{
+    width: 450px;
+    height: 350px;
+    overflow: hidden;
+    overflow-y: scroll;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.givereview .reviewform{
+ padding:0px 40px !important;
+}
+
+.givereview h5{
+    position: sticky;
+    top:0px;
+    z-index: 100;
+}
+
+.givereview ::-webkit-scrollbar {
+    display: none;
+}
+
+.givereview {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.readreview{
+    width: 450px;
+    height: 350px;
+    overflow: hidden;
+    overflow-y: scroll;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.readreview h5{
+    position: sticky;
+    top:0px;
+    z-index: 100;
+}
+
+.readreview ::-webkit-scrollbar {
+    display: none;
+}
+
+.readreview {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.readreview :hover {
+    cursor: grab;
+}
+
+.description{
+    width: 90%;
+    margin: auto;
+    /* padding: 10px 50px; */
+}
+
+.description p {
+    width: fit-content;
+    text-align: justify;
+}
+
+.backbtn{
+    background-color: black !important;
+    color:white !important;
+    font-weight: bold;
+    padding: 8px 30px;
+}
+.backbtn:hover{
+    background-color: transparent !important;
+    color:black !important;
+}
+@media only screen and (min-width:300px) and (max-width:600px){
+    .readimg{
+        width:90%;
+        height: 300px;
+    }
+    .givereview{
+        margin-bottom: 25px;
+    }
+}
