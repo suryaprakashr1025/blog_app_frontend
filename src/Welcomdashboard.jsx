@@ -33,7 +33,7 @@ function Welcomdashboard() {
                     <div class={`${collapse ? "collapse" : ""} navbar-collapse navcoll`} id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item dropdown">
-                                <Link to="/home" class="nav-link " href="#"  onClick={handleclose}>
+                                <Link to="/" class="nav-link " href="#"  onClick={handleclose}>
                                     Home
                                 </Link>
 

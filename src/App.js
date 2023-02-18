@@ -10,13 +10,16 @@ import Forgetpassword from './Forgetpassword';
 import Home from './Home';
 import Blog from './Blog';
 import Readblog from './Readblog';
+import Bloggerdashboard from './Bloggerdashboard';
+import CreateEditblog from './CreateEditblog';
+import Viewblog from './Viewblog';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Welcomdashboard />}>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/changepassword" element={<ChangePassword />} />
@@ -24,6 +27,9 @@ function App() {
         </Route>
         <Route path="/blog" element={<Blog />} />
         <Route path="/readblog/:blogid" element={<Readblog />} />
+        <Route path="/bloggerdashboard" element={<Bloggerdashboard />} />
+        <Route path="/createeditblog/:blogid" element={<CreateEditblog />} />
+        <Route path="/viewblog/:blogid" element={<Viewblog />} />
       </Routes>
     </BrowserRouter>
   );

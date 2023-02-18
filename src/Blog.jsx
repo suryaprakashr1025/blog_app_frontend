@@ -39,10 +39,10 @@ function Blog() {
     const handleclose = () => {
         setCollapse(true)
     }
-const logout = () =>{
-    navigate("/home")
-    localStorage.removeItem("name")
-}
+    const logout = () => {
+        navigate("/")
+        localStorage.removeItem("name")
+    }
 
     return (
         <>
@@ -67,7 +67,7 @@ const logout = () =>{
                                 <a class="navbar-brand" href="#" style={{ color: "white", fontWeight: "bold" }}>Blog App</a>
                                 {
                                     collapse ? <button class="navbar-toggler" type="button" style={{ color: "white" }} data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onClick={handleClick}>
-                                        <span class="navbar-toggler-icon" style={{ color: "white" }}><GiHamburgerMenu/></span>
+                                        <span class="navbar-toggler-icon" style={{ color: "white" }}><GiHamburgerMenu /></span>
                                     </button> :
                                         <button class="navbar-toggler close" style={{ color: "white" }} type="button" onClick={handleclose}>
                                             <span><FaTimes /></span>
@@ -76,14 +76,14 @@ const logout = () =>{
 
                                 <div class={`${collapse ? "collapse" : ""} navbar-collapse blognavcoll`} id="navbarNavDropdown" >
                                     <ul class="navbar-nav">
-                                        
+
                                         <li class="nav-item dropdown">
-                                            <a  class="nav-link localname" href="#" style={{ color: "white" }} >
+                                            <a class="nav-link localname" href="#" style={{ color: "white" }} >
                                                 {localStorage.getItem("name")}
                                             </a>
                                         </li>
                                         <li class="nav-item dropdown">
-                                            <a  class="nav-link " href="#" style={{ color: "white" }} onClick={logout} >
+                                            <a class="nav-link " href="#" style={{ color: "white" }} onClick={logout} >
                                                 Logout
                                             </a>
 
@@ -110,7 +110,7 @@ const logout = () =>{
                                                         <h5 class="card-title " style={{ color: "rgb(226, 82, 38)" }}>{item.title}</h5>
                                                         <h6 class="card-title">Publisher Name: {item.publisher_name}</h6>
                                                         <h6 class="card-title">Published Date:{item.publish_date}</h6>
-                                                        <Link to={`/readblog/${item.blogid}`} href="#" class="btn btn-outline-dark read">Read More</Link>
+                                                        <Link to={`/readblog/${item._id}`} href="#" class="btn btn-outline-dark read">Read More</Link>
                                                     </div>
                                                 </div>
                                             </div>

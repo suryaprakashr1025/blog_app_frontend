@@ -6,7 +6,7 @@
     box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.5);
     position: sticky;
     top: 0px;
-    z-index: 100;
+    z-index: 200;
     color: rgb(10, 9, 9) !important;
 }
 
