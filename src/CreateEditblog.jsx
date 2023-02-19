@@ -30,8 +30,8 @@ function CreateEditblog() {
       if (!values.title) {
         errors.title = "Please Enter Title Name"
       }
-      else if (values.title.length < 3 || values.title.length > 15) {
-        errors.title = "Please Enter the 5 to 15 Characters"
+      else if (values.title.length < 3 || values.title.length > 50) {
+        errors.title = "Please Enter the 5 to 50 Characters"
       }
 
       if (!values.image) {
