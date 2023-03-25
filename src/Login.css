@@ -238,6 +238,18 @@ body {
 .errortext{
     color:aliceblue !important;
 }
+
+.details{
+    height: fit-content;
+    padding: 50px;
+    background-image: linear-gradient(to right, rgb(238, 72, 21),rgb(224, 161, 101));
+   
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .1),
+        -1px -1px 5px rgba(0, 0, 0, .1);
+    border-radius: 30px;
+    color: white;
+
+}
 @media screen and (min-width:300px) and (max-width:600px) {
 
 .logimage{

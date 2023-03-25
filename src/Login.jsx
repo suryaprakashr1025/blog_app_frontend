@@ -100,7 +100,8 @@ function Login() {
                 <div className='logimage'>
 
                 </div>
-                <div className="col-lg-4 col-md-6 col-12 mx-auto">
+                <div className='row'>
+                <div className="col-lg-7 col-md-6 col-12 mx-auto">
 
 
                     <form onSubmit={login.handleSubmit} className={`loginform ${dialog ? "opacity-form" : ""}`}>
@@ -180,8 +181,20 @@ function Login() {
                     </form >
 
                 </div>
+                <div className='col-lg-5 details text-center'>
+                    <h5 style={{color:"black"}}>Admin Login</h5>
+                    <h6>username: surya</h6>
+                    <h6>password: surya123</h6>
+                    <h6 style={{color:"red"}}>Please click the checkbox</h6>
+                    <hr></hr>
+                    <h5 style={{color:"black"}}>User Login</h5>
+                    <h6>username: surya</h6>
+                    <h6>password: surya123</h6>
+                </div>
                 <div className='logimage1'>
 
+                </div>
+               
                 </div>
             </div >
 
